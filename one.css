@@ -1,0 +1,373 @@
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+      
+body {
+    font-family: 'Arial', sans-serif;
+}
+      
+/* Navbar */
+.navbar {
+      height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 28px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+           
+.navbar .logo img {
+    height: 170px;
+}
+      
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+      
+.navbar nav ul li {
+    margin: 0 15px;
+}
+      
+      .navbar nav ul li a {
+        margin-left: 20px;
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+      }
+      
+      .auth-buttons button {
+        font-size: 1.3rem;
+        width: 130px;
+        height: 60px;
+        margin-left: 10px;
+        margin-right: 5px;
+        padding: 8px 16px;
+        border-radius: 20px;
+        border: 2px solid orange;
+        background-color: white;
+        color: orange;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      .auth-buttons .signup {
+        background-color: orange;
+        color: white;
+}
+    
+.hero {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; /* Align to the left */
+          background-color: #fafafa;
+          position: relative;
+          width: 100%; /* Ensure the hero section takes the full width */
+}
+      
+.hero-text {
+        height: 410px;
+        width: 600px;
+        position: absolute;
+        top: 50%;
+        left: 150px; /* Position the text on the left side */
+        transform: translateY(-50%); /* Center it vertically */
+        background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        border-radius: 10px;
+        text-align: left; /* Align text to the left */
+}
+      
+.hero-text h1 {
+            margin-top: 30px;
+            margin-left: 35px;
+          font-size: 3.5rem;
+          color: #f47c20;
+          margin-bottom: 20px;
+}
+      
+.hero-text p {
+            margin-top: 34px;
+            margin-left: 35px;
+          font-size: 1.8rem;
+          color: #333;
+          line-height: 1.6;
+}
+      
+.get-started {
+  margin-top: 45px;
+  margin-left: 170px;
+  padding: 12px 24px;
+  background-color: #f47c20;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.hero-image img {
+  width: 214%; /* Ensure the image takes full width */
+  height: 780px; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Counselors Section */
+.counselors {
+  padding: 80px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.counselors h2 {
+  font-size: 4.8rem;
+  margin-bottom: 20px;
+}
+
+.counselors-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.counselor-images {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counselor-images img {
+  width: 480px;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.main-counselor {
+  width: 160px;
+  height: 200px;
+}
+
+.counselor-info {
+  max-width: 70%;
+  text-align: left;
+}
+
+.counselor-info h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.counselor-info p {
+  font-size: 30px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.session-types {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.session img {
+  margin-bottom: 8px;
+}
+
+.session p {
+  font-size: 1rem;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.features li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+.counselor-info{
+  font-size: 25px;
+}
+.session-types{
+  gap: 100px;
+  height: 120px;
+}
+/* How It Works Section */
+.how-it-works {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 7rem;
+  margin-bottom: 100px;
+  position: relative;
+  display: inline-block;
+}
+
+.how-it-works h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #f47c20;
+  margin: 8px auto 0;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 85px;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 160px;
+}
+
+.step img {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #f47c20;
+  border-radius: 50%;
+  padding: 10px;
+    transition: 2s;   
+}
+.step img :hover{
+    transform: rotate(360deg);
+}
+
+.step p {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #273cc1;
+}
+
+/* Footer */
+.footer {
+  background: #0a077f;
+  color: #ffffff;
+  padding: 60px 20px 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about {
+  flex: 1 1 250px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-about p a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-links {
+  flex: 1 1 150px;
+}
+
+.footer-links h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-callback {
+  flex: 1 1 250px;
+}
+
+.footer-callback h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-callback input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.footer-callback button {
+  width: 100%;
+  background: #f47c20;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-bottom a {
+  color: #f47c20;
+  text-decoration: underline;
+}

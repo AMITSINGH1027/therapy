@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Therapy Session</title>
+  <link rel="stylesheet" href="booking1.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="one">"You are not alone. Help is just one call away."</div>
+
+    <img src="download.jpeg.jpg" alt="Therapist Photo">
+    <h1>Meet Dr. navneet Singh</h1>
+    <p>Certified Stress Relief Therapist | 10+ Years Experience</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+
+      <input type="date" required>
+      <textarea placeholder="Briefly tell us your concern..." rows="3"></textarea>
+
+      <button type="submit">Book a Session</button>
+    </form>
+
+    <!-- Contact  -->
+    <div class="contact-options">
+      <p style="font-weight: bold;">Need Immediate Help?</p>
+
+      <a href="tel:+917898223528" class="four">Call Therapist</a>
+
+            <a href="meet.google.com/neg-zukx-pgz" class="four" target="_blank">
+        Join Video Call
+      </a>
+    </div>
+
+    <div class="three">Confidential | Compassionate | Certified</div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div class="popup" id="thankYouPopup">
+    <div class="popup-content">
+      <h2>Thank You!</h2>
+      <p>Your session has been booked successfully. We'll reach out to you soon!</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+<script>
+  const form = document.getElementById('bookingForm');
+  const popup = document.getElementById('thankYouPopup');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); 
+    popup.style.display = 'flex'; 
+    form.reset(); 
+  });
+
+  function closePopup() {
+    popup.style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
